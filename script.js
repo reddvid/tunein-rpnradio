@@ -91,6 +91,7 @@ function closeNav() {
 
 function openNav() {
   document.getElementById('mobile-nav').classList.add('show');
+  document.getElementById('mobile-nav').classList.add('show');
   isNavOpen = true;
 };
 

@@ -237,7 +237,7 @@ div.listarea {
 }
 
 div#mobile-nav {
-  background-color: rgba(17, 17, 17, 0.95);
+  background-color: rgba(17, 17, 17, 1);
   z-index: 9999;
   height: 100vh;
   width: 100vw;
@@ -246,7 +246,7 @@ div#mobile-nav {
   left: 0;
   transform: translate3d(100vw, 0, 0);
   transition: transform .3s cubic-bezier(0, .52, 0, 1);
-  overflow: scroll;
+  overflow: auto;
 }
 
 div#mobile-nav.show {
@@ -275,6 +275,11 @@ div#mobile-nav.show {
     width: 720px;
     margin: 0 auto !important;
   }
+
+  header a {
+    cursor: pointer;
+  }
+
   header a.menu {
     position: inherit;
     margin-left: 619px;
