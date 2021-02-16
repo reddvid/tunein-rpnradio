@@ -19,35 +19,35 @@ function itemClick(e) {
           title: 'RPN ' + st,
           artist: 'RPN Radio',
           artwork: [{
-              src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-96.png',
-              sizes: '96x96',
-              type: 'image/png'
-            },
-            {
-              src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-128.png',
-              sizes: '128x128',
-              type: 'image/png'
-            },
-            {
-              src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-192.png',
-              sizes: '192x192',
-              type: 'image/png'
-            },
-            {
-              src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-256.png',
-              sizes: '256x256',
-              type: 'image/png'
-            },
-            {
-              src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-384.png',
-              sizes: '384x384',
-              type: 'image/png'
-            },
-            {
-              src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-512.png',
-              sizes: '512x512',
-              type: 'image/png'
-            },
+            src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-96.png',
+            sizes: '96x96',
+            type: 'image/png'
+          },
+          {
+            src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-128.png',
+            sizes: '128x128',
+            type: 'image/png'
+          },
+          {
+            src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-192.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-256.png',
+            sizes: '256x256',
+            type: 'image/png'
+          },
+          {
+            src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-384.png',
+            sizes: '384x384',
+            type: 'image/png'
+          },
+          {
+            src: 'http://rpnradio.com/tunein/images/thumbnails/ronda-512.png',
+            sizes: '512x512',
+            type: 'image/png'
+          },
           ]
         });
 
@@ -77,4 +77,28 @@ function itemClick(e) {
   //Show Audio Controls
   var player = document.getElementById('player');
   player.style.display = "table";
+
+
 };
+
+let isNavOpen = false;
+
+//Navigations
+function closeNav() {
+  document.getElementById('mobile-nav').classList.remove('show');
+  isNavOpen = false;
+};
+
+function openNav() {
+  document.getElementById('mobile-nav').classList.add('show');
+  isNavOpen = true;
+};
+
+function goBack() {
+  if (isNavOpen) {
+    closeNav();
+  }
+  else {
+    window.history.back()
+  }
+}
