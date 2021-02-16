@@ -81,7 +81,7 @@ function itemClick(e) {
 
 };
 
-let isNavOpen = false;
+var isNavOpen = false;
 
 //Navigations
 function closeNav() {
@@ -98,6 +98,9 @@ function openNav() {
 function goBack() {
   if (isNavOpen) {
     closeNav();
+  }
+  else if (document.referrer == "") {
+    window.location.href = "https://tunein.rpnradio.com/";
   }
   else {
     window.history.back()

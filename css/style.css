@@ -9,6 +9,8 @@ body {
   transition: 300ms;
   background: #171717;
   color: #fff;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 header {
@@ -28,6 +30,7 @@ header a {
   text-align: center;
   height: 48px;
   width: 48px;
+  cursor: pointer;
 }
 
 header a span {
@@ -39,6 +42,57 @@ header a span {
 header a.menu {
   position: absolute;
   right: 0px;
+  cursor: pointer;
+}
+
+header a.menu span {
+  display: block;
+  margin: auto;
+  padding: 12px;
+}
+
+div#mobile-nav {
+  background-color: rgba(17, 17, 17, 1);
+  z-index: 9999;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate3d(100vw, 0, 0);
+  transition: transform .3s cubic-bezier(0, .52, 0, 1);
+  overflow: auto;
+}
+
+div#mobile-nav.show {
+  transform: translate3d(0vw, 0, 0);
+}
+
+ul.list {
+  margin-top: 20px;
+}
+
+div#mobile-nav .inset header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 48px;
+  z-index: 999;
+}
+
+div#mobile-nav .inset header .menu {
+  position: absolute;
+  right: 0px;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+}
+
+div#mobile-nav .inset header .menu span {
+  display: block;
+  padding: 12px;
+  margin: 0;
 }
 
 .col {
@@ -49,12 +103,13 @@ header a.menu {
 }
 
 img.scale-with-grid {
-  width: 75%;
+  width: 100%;
   height: auto;
 }
 
 div.listarea {
   margin: 0 auto;
+  margin-top: -20px;
 }
 
 .musesStyleReset, .musesStyleReset DIV, .musesStyleReset IMG, .musesStyleReset SPAN {
@@ -68,7 +123,7 @@ div.listarea {
   left: 0;
   text-align: center;
   position: fixed;
-  width: 100vw;
+  width: 100%;
 }
 
 #head-logo {
@@ -180,8 +235,8 @@ div.listarea {
 }
 
 .st-icon {
-  width: 75%;
-  max-width: 200px;
+  width: 70%;
+  max-width: 180px;
 }
 
 .st-social {
@@ -236,26 +291,9 @@ div.listarea {
   }
 }
 
-div#mobile-nav {
-  background-color: rgba(17, 17, 17, 1);
-  z-index: 9999;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate3d(100vw, 0, 0);
-  transition: transform .3s cubic-bezier(0, .52, 0, 1);
-  overflow: auto;
-}
-
-div#mobile-nav.show {
-  transform: translate3d(0vw, 0, 0);
-}
-
 /* Desktop */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 720px) {
   body {
     max-width: 720px;
   }
@@ -274,29 +312,32 @@ div#mobile-nav.show {
     display: block;
     width: 720px;
     margin: 0 auto !important;
+    z-index: 999;
   }
-
   header a {
     cursor: pointer;
   }
-
   header a.menu {
     position: inherit;
     margin-left: 619px;
+    display: inline-block;
   }
   div.col {
     margin-top: 0px;
   }
-  div#mobile-nav header {
+  div#mobile-nav .inset header {
     position: inherit;
     display: block;
     width: 720px;
+    margin: 0 auto !important;
+    z-index: 9999;
   }
-  div#mobile-nav header a.menu {
-    position: absolute;
+  div#mobile-nav .inset header .menu {
+    cursor: pointer;
   }
+ 
   img.st-icon {
-    max-width: 150px;
+    max-width: 180px;
   }
   div.inset h2 {
     margin-top: -30px;
