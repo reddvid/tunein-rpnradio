@@ -291,6 +291,23 @@ div.listarea {
   }
 }
 
+div#footer {
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  color: #b2b2b2;
+}
+
+div#footer a {
+  text-decoration: none;
+  color: #dd0c11;
+}
+
 /* Desktop */
 
 @media only screen and (min-width: 720px) {
@@ -335,7 +352,6 @@ div.listarea {
   div#mobile-nav .inset header .menu {
     cursor: pointer;
   }
- 
   img.st-icon {
     max-width: 180px;
   }
