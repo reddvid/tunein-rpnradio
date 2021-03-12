@@ -4,8 +4,7 @@ body {
   max-width: 600px;
   padding: 0;
   margin: 0 auto;
-  font-family: 'Arial Nova', 'Helvetica', 'Roboto', sans-serif, Helvetica, Arial;
-  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   transition: 300ms;
   background: #171717;
   color: #fff;
