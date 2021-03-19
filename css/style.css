@@ -308,6 +308,9 @@ div#footer a {
   color: #dd0c11;
 }
 
+div.message {
+  display: block;
+}
 /* Desktop */
 
 @media only screen and (min-width: 720px) {
