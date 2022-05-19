@@ -1,0 +1,92 @@
+{
+  "stations": [
+    {
+      "name": "batac",
+      "callsign": "dzrl",
+      "frequency": 639,
+      "stream1": "http://87.98.130.255:8956/stream",
+      "stream2": "https://",
+      "studio": "",
+      "transmitter": "",
+      "social": {
+        "twitter": "RPNBatac639",
+        "facebook": "RPNBatac639",
+        "youtube": "RPNBatac"
+      },
+      "staff": [
+        {
+          "name": "Rodrigo Sadian",
+          "position": "OIC",
+          "contact": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "position": "AFA",
+          "contact": "",
+          "email": ""
+        },
+        {
+          "name": "Mike Ramos",
+          "position": "Chief Technician",
+          "contact": "",
+          "email": ""
+        }
+      ],
+      "technical": {
+        "antennaheight": " ft",
+        "transmitter": "",
+        "generator": "",
+        "power": "",
+        "signon": "",
+        "signoff": "",
+        "internetspeed" : "",
+        "isp" : ""
+      }
+    },
+    {
+      "name": "baguio",
+      "callsign": "dzbs",
+      "frequency": 1368,
+      "stream1": "http://87.98.130.255:8956/stream",
+      "stream2": "https://",
+      "studio": "",
+      "transmitter": "",
+      "social": {
+        "twitter": "RPNBatac639",
+        "facebook": "RPNBatac639",
+        "youtube": "RPNBatac"
+      },
+      "staff": [
+        {
+          "name": "Rodrigo Sadian",
+          "position": "OIC",
+          "contact": "",
+          "email": ""
+        },
+        {
+          "name": "",
+          "position": "AFA",
+          "contact": "",
+          "email": ""
+        },
+        {
+          "name": "Mike Ramos",
+          "position": "Chief Technician",
+          "contact": "",
+          "email": ""
+        }
+      ],
+      "technical": {
+        "antennaheight": " ft",
+        "transmitter": "",
+        "generator": "",
+        "power": "",
+        "signon": "",
+        "signoff": "",
+        "internetspeed" : "",
+        "isp" : ""
+      }
+    }
+  ]
+}
